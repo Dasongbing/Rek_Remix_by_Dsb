@@ -1,0 +1,340 @@
+[
+    //Civilization unique improvements
+    {
+        "name": "Sacred Grove",
+        "uniqueTo": "Lithuania",
+        "terrainsCanBeBuiltOn": ["Land","Coast","Ocean"],
+        "science": 1, 
+        "production": 1,
+        "culture": 1,
+        "food": 1,
+        "faith": 1,
+        "uniques": [
+            "Great Improvement",
+            "Removes removable features when built",
+            "[+1 Science, +1 Culture, +1 Food, +1 Faith] <after discovering [Acoustics]>",
+            "[+1 Science, +1 Production, +1 Culture, +1 Faith] <after discovering [Computers]>",
+            "Pillaging this improvement yields approximately [+20 Gold]"
+        ]
+    },
+	{
+		"name": "Academy",
+		"terrainsCanBeBuiltOn": ["Land","Coast","Ocean"],
+		"science": 8,
+		"uniques": ["Great Improvement", "[+2 Science] <after discovering [Scientific Theory]>", "[+2 Science] <after discovering [Atomic Theory]>", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
+	},
+	{
+		"name": "Landmark",
+		"terrainsCanBeBuiltOn": ["Land","Coast","Ocean"],
+		"culture": 6,
+		"uniques": ["Great Improvement", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
+	},
+	{
+		"name": "Manufactory",
+		"terrainsCanBeBuiltOn": ["Land","Coast","Ocean"],
+		"production": 4,
+		"uniques": ["Great Improvement", "[+1 Production] <after discovering [Chemistry]>", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
+	},
+	{
+		"name": "Customs house",
+		"terrainsCanBeBuiltOn": ["Land","Coast","Ocean"],
+		"gold": 4,
+		"uniques": ["Great Improvement", "[+1 Gold] <after discovering [Economics]>", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
+	},
+	{
+		"name": "Holy site",
+		"terrainsCanBeBuiltOn": ["Land","Coast","Ocean"],
+		"faith": 6,
+		"uniques": ["Great Improvement", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
+	},
+	{
+		"name": "Citadel",
+		"terrainsCanBeBuiltOn": ["Land","Coast","Ocean"],
+		"uniques": [
+			"Great Improvement",
+			"Gives a defensive bonus of [100]%",
+			"Adjacent enemy units ending their turn take [30] damage",
+			"Can be built just outside your borders",
+        	"Constructing it will take over the tiles around it and assign them to your closest city",
+			"Removes removable features when built",
+		]
+	},
+
+
+    {
+        "name": "Harjis",
+        "uniqueTo": "Goths",
+        "terrainsCanBeBuiltOn": ["Land"],
+        "production": 1,
+        "turnsToBuild": 7,
+        "techRequired": "Mining",
+        "uniques": [
+            "[+1 Production] <after discovering [Iron Working]>",
+            "[+1 Production] <after discovering [Gunpowder]>",
+            "[+1 Production] <after discovering [Dynamite]>",
+            "Must be next to [Luxury resource]",
+            "Cannot be built on [resource] tiles",
+            "Only available <with [0] to [0] neighboring [Harjis] tiles>",
+            "Pillaging this improvement yields approximately [+20 Gold]"
+        ]
+    },
+    {
+        "name": "Brazilwood Camp",
+        "uniqueTo": "Brazil",
+        "terrainsCanBeBuiltOn": ["Jungle","Forest"],
+        "production": 1,
+        "turnsToBuild": 7,
+        "techRequired": "Bronze Working",
+        "uniques": [
+            "[+2 Gold] <after discovering [Machinery]>",
+            "[+2 Culture] <after discovering [Acoustics]>",
+            "Pillaging this improvement yields approximately [+20 Gold]"
+        ]
+    },
+    {
+        "name": "Tibetan Monastery",
+        "uniqueTo": "Tibet",
+        "terrainsCanBeBuiltOn": ["Hill","Jungle","Forest"],
+        "culture": 1,
+        "faith": 2,
+        "turnsToBuild": 7,
+        "techRequired": "Calendar",
+        "uniques": [
+            "[+1 Faith] <after discovering [Theology]>",
+            "[+1 Culture] for each adjacent [Mountain]",
+            "Can only be built on [Hill] tiles",
+            "Cannot be built on [resource] tiles",
+            "Pillaging this improvement yields approximately [+20 Gold]"
+        ]
+    },
+    {
+        "name": "Polder",
+        "uniqueTo": "The Netherlands",
+        "terrainsCanBeBuiltOn": ["Marsh","Flood plains","Coast","Lakes"],
+        "food": 2,
+        "turnsToBuild": 7,
+        "techRequired": "Guilds",
+        "uniques": [
+            "[+1 Food] from [Marsh] tiles",
+            "[+1 Food] from [Flood plains] tiles",
+            "[+1 Production, +2 Gold] <after discovering [Economics]>",
+            "Cannot be built on [Water] tiles <with [0] to [2] neighboring [Land] tiles>",
+            "Cannot be built on [resource] tiles",
+            "Pillaging this improvement yields approximately [+20 Gold]"
+        ]
+    },
+    {
+        "name": "Tipi",
+        "uniqueTo": "Sioux",
+        "terrainsCanBeBuiltOn": ["Plains"],
+        "food": 1,
+        "faith": 1,
+        "turnsToBuild": 7,
+        "techRequired": "Trapping",
+        "uniques": [
+            "Does not need removal of [Forest]",
+            "Does not need removal of [Jungle]",
+            "Must be next to [Luxury resource]",
+            "[+1 Food] <after discovering [Civil Service]>",
+            "[+1 Faith] <after discovering [Theology]>",
+            "[+1 Culture] for each adjacent [City center]",
+            "[+1 Gold] <in [River] tiles>",
+            "Cannot be built on [Hill] tiles",
+            "Can only be built to improve a resource <in [resource] tiles>",
+            "Pillaging this improvement yields approximately [+20 Gold]"
+        ]
+    },
+    {
+        "name": "Kasbah",
+        "uniqueTo": "Morocco",
+        "terrainsCanBeBuiltOn": ["Desert","Flood plains","Hill"],
+        "food": 2,
+        "production": 1,
+        "gold": 1,
+        "turnsToBuild": 7,
+        "techRequired": "Chivalry",
+        "uniques": [
+            "Can only be built on [Desert] tiles <in [Hill] tiles>",
+            "Cannot be built on [resource] tiles",
+            "Gives a defensive bonus of [50]%",
+            "Pillaging this improvement yields approximately [+20 Gold]"
+        ]
+    },
+    {
+        "name": "Caer",
+        "uniqueTo": "Wales",
+        "terrainsCanBeBuiltOn": ["Hill"],
+        "gold": 3,
+        "production": 1,
+        "culture": 1,
+        "turnsToBuild": 7,
+        "techRequired": "Chivalry",
+        "uniques": [
+            "Gives a defensive bonus of [25]%",
+            "[+1 Culture] <after discovering [Acoustics]>",
+            "Cannot be built on [resource] tiles",
+            "Pillaging this improvement yields approximately [+20 Gold]"
+        ]
+    },
+    {
+        "name": "Motte and Bailey",
+        "uniqueTo": "Normandy",
+        "terrainsCanBeBuiltOn": ["Land"],
+        "food": 1,
+        "production": 1,
+        "turnsToBuild": 7,
+        "techRequired": "Engineering",
+        "uniques": [
+            "Gives a defensive bonus of [25]%",
+            "[+2 Culture] <after discovering [Flight]>",
+            "Only available <with [0] to [0] neighboring [Motte and Bailey] tiles>",
+            "Pillaging this improvement yields approximately [+20 Gold]"
+        ]
+    },
+    {
+        "name": "Kampong Ayer",
+        "uniqueTo": "Brunei",
+        "terrainsCanBeBuiltOn": ["Coast"],
+        "food": 1,
+        "turnsToBuild": 8,
+        "techRequired": "Optics",
+        "uniques": [
+            "[+1 Production] <after discovering [Navigation]>",
+            "Cannot be built on [resource] tiles",
+            "Pillaging this improvement yields approximately [+20 Gold]"
+        ]
+    },
+    {
+        "name": "高卢矿山",
+        "uniqueTo": "Gaul",
+        "terrainsCanBeBuiltOn": ["Hill"],
+        "turnsToBuild": 7,
+	"production": 1,
+	"culture": 1,
+        "techRequired": "Mining",
+        "uniques": [
+            "[+1 Production] <after discovering [Chemistry]>",
+            "Pillaging this improvement yields approximately [+18 Gold]"
+            "Cannot be built on [resource] tiles",
+            "Gain control over [all] tiles in a [1]-tile radius",
+        ],
+        "shortcutKey": "M"
+    },
+    {
+        "name": "Ancient ruins",
+        "terrainsCanBeBuiltOn": ["Land"],
+        "uniques": [
+            "Unpillagable",
+            "Provides a random bonus when entered",
+        ]
+    },
+    {
+        "name": "肖松尼的扩张",
+        "terrainsCanBeBuiltOn": ["Land"],
+        "uniques": [
+            "Only available <with [1] to [1] neighboring [City center] tiles>",
+            "Gain control over [all] tiles in a [1]-tile radius",
+        ],
+        "shortcutKey": "M"
+    },
+    {
+        "name": "自然景区",
+        "terrainsCanBeBuiltOn": ["Land"],
+        "culture": 1,
+	"production": -99,
+	"food": -99,
+	"faith": -99,
+	"science": -99,
+	"happiness": -99,
+        "uniques": [
+	    "Tile provides yield without assigned population",
+            "[+1 Culture, +1 Gold] <with [1] to [6] neighboring [自然景区] tiles>",
+            "[+1 Culture] <in [Forest] tiles>",
+            "[+1 Gold] <with [1] to [6] neighboring [Mountain] tiles> <after discovering [Astronomy]>",
+            "[+1 Culture] <with [1] to [6] neighboring [Lakes] tiles> <after discovering [The Wheel]>",
+            "[+1 Gold] <after discovering [Economics]>",
+            "Does not need removal of [Forest]",
+            "Does not need removal of [Jungle]",
+        ]
+    },
+	{
+		"name": "Moai",
+		"uniqueTo": "Polynesia",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 4,
+		"uniques": ["[+1 Culture] <after discovering [Construction]>","[+1 Culture] <with [1] to [6] neighboring [Moai] tiles> <after discovering [Construction]>","[+1 Culture] <with [4] to [6] neighboring [Moai] tiles> <after discovering [Construction]>", "[+1 Gold] <after discovering [Flight]>"],
+		"shortcutKey": "M"
+	},
+		{
+		"name": "City center",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+		"Ensures a minimum tile yield of [+2 Food, +2 Production]",
+            "Unpillagable", "Irremovable", "Unbuildable"],
+        "civilopediaText": [
+			{"text":"Marks the center of a city"},
+			{"text":"Appearance changes with the technological era of the owning civilization"}
+		]
+	},
+		{
+		"name": "Fishing Boats",
+		"terrainsCanBeBuiltOn": ["Coast","Ocean"],
+		"turnsToBuild": 7,
+		"production": 1,
+		"techRequired": "Sailing",
+		"uniques": ["[+1 Food, -1 Production] <in [Fish] tiles>","[+1 Gold] <after discovering [Compass]>","Pillaging this improvement yields approximately [+5 Gold]"],
+		"shortcutKey": "F"
+	},
+		{
+		"name": "shaosuo",
+		"terrainsCanBeBuiltOn": ["岛屿"],
+		"turnsToBuild": 7,
+		"techRequired": "Optics",
+		"uniques": [
+	            "Gain control over [all] tiles in a [1]-tile radius",
+	 	    "Tile provides yield without assigned population",
+		    "Can be built outside your borders"
+		],
+		"shortcutKey": "F"
+	},
+	{
+		"name": "WaterFarm",
+		"uniqueTo": "Vietnam",
+		"terrainsCanBeBuiltOn": ["Land","Hill"],
+		"food": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Agriculture",
+		"uniques": [
+			"Improves [Wheat] resource in this tile",
+			"[+1 Food] <after discovering [Civil Service]>",
+            "Pillaging this improvement yields approximately [+6 Gold]"],
+		"shortcutKey": "W"
+	},
+	{
+		"name": "Camp",
+		"turnsToBuild": 7,
+		"techRequired": "Trapping",
+		"uniques": ["Does not need removal of [Forest]",
+			"Does not need removal of [Jungle]",
+			"Does not need removal of [Marsh]",
+			"[+1 Food] <after discovering [Economics]>",
+			"Can only be built to improve a resource",
+			"Pillaging this improvement yields approximately [+10 Gold]"],
+		"shortcutKey": "C"
+	},
+	{
+		"name": "Plantation",
+		"turnsToBuild": 6,
+		"food": 1,
+		"gold": 1,
+		"techRequired": "Pottery",
+		"uniques": [
+			"Does not need removal of [Forest]",
+			"Does not need removal of [Jungle]",
+			"Does not need removal of [Marsh]",
+			"[+1 Food] <after discovering [Civil Service]>",
+			"Can only be built to improve a resource",
+			"Pillaging this improvement yields approximately [+10 Gold]"],
+		"shortcutKey": "P"
+	},
+]

@@ -1,0 +1,2590 @@
+[
+    // Religious buildings
+    {
+        "name": "Cathedral",
+        "culture": 2,
+	"faith": 3,
+        "specialistSlots": {"Artist": 1},
+        "uniques": [
+            "Unbuildable","Unsellable",
+        ]
+    },
+    {
+        "name": "Mosque",
+        "culture": 2,
+        "faith": 2,
+        "food": 1,
+        "science": 1,
+        "production": 1,
+        "gold": 1,
+        "uniques": [
+            "Unbuildable","Unsellable",
+        ]
+    },
+    {
+        "name": "Pagoda",//佛塔
+	"faith": 2,
+        "culture": 2,
+        "happiness": 2,
+        "uniques": [
+            "Unbuildable","Unsellable",
+        ]
+    },
+    {
+        "name": "Gurdwara",
+        "culture": 2,
+        "faith": 3,
+        "specialistSlots": {"Scientist": 1},
+        "uniques": [
+            "Unbuildable","Unsellable",
+        ]
+    },
+    {
+        "name": "Synagogue",
+        "culture": 2,
+        "faith": 2,
+        "production": 2,
+        "uniques": [
+            "Unbuildable","Unsellable",
+            "[+10]% Production [in this city]",
+        ]
+    },
+    {
+        "name": "Vihara",
+        "faith": 3,
+        "culture": 2,
+	"gold": 8,
+        "uniques": [
+            "Unbuildable","Unsellable",
+        ]
+    },
+    {
+        "name": "Mandir",
+        "faith": 3,
+        "culture": 2,
+        "uniques": [
+            "Unbuildable","Unsellable",
+            "[+1 Food] from [Luxury resource] tiles [in this city]",
+            "[+1 Production] from [Luxury resource] tiles [in this city]",
+            "[+1 Gold] from [Luxury resource] tiles [in this city]",
+        ]
+    },
+    {
+        "name": "Cloves", // Indonesian luxury
+        "uniqueTo": "Indonesia",
+        "cost": 0,
+        "uniques": [
+            "Provides [2] [Cloves]",
+            "Never destroyed when the city is captured",
+            "Unsellable",
+            "Only available <in cities without a [Cloves]>",
+            "Only available <in cities without a [Nutmeg]>",
+            "Only available <in cities without a [Pepper]>",
+            "Must be next to [Coast]",
+            "Limited to [1] per Civilization",
+            "Will not be displayed in Civilopedia"
+        ]
+    },
+    {
+        "name": "Nutmeg", // Indonesian luxury
+        "uniqueTo": "Indonesia",
+        "cost": 0,
+        "uniques": [
+            "Provides [2] [Nutmeg]",
+            "Never destroyed when the city is captured",
+            "Unsellable",
+            "Only available <in cities without a [Cloves]>",
+            "Only available <in cities without a [Nutmeg]>",
+            "Only available <in cities without a [Pepper]>",
+            "Must be next to [Coast]",
+            "Limited to [1] per Civilization",
+            "Will not be displayed in Civilopedia"
+        ]
+    },
+    {
+        "name": "Pepper", // Indonesian luxury
+        "uniqueTo": "Indonesia",
+        "cost": 0,
+        "uniques": [
+            "Provides [2] [Pepper]",
+            "Never destroyed when the city is captured",
+            "Unsellable",
+            "Only available <in cities without a [Cloves]>",
+            "Only available <in cities without a [Nutmeg]>",
+            "Only available <in cities without a [Pepper]>",
+            "Must be next to [Coast]",
+            "Limited to [1] per Civilization",
+            "Will not be displayed in Civilopedia"
+        ]
+    },
+    {
+        "name": "~CS",
+        "uniques": [
+            "Unsellable",
+            "Will not be displayed in Civilopedia",
+            "Unbuildable",
+            "Destroyed when the city is captured"
+        ]
+    },
+    {
+        "name": "Watch Tower",
+        "cityStrength": 7,
+        "cityHealth": 50,
+        "hurryCostModifier": 25,
+        "uniques": [
+            "Unsellable", "Unbuildable",
+            "Cannot be purchased"
+        ]
+    },
+    {
+        "name": "Ulugh Beg's Observatory",
+        "cityStrength": 5,
+        "uniqueTo": "Timurids",
+        "percentStatBonus": {"science": 15,"gold": 15,"culture": 15},
+        "uniques": [
+            "Unsellable", "Unbuildable",
+            "Cannot be purchased",
+            "Only available <in cities with a [Palace]>",
+            "Destroyed when the city is captured"
+        ]
+    },
+    {
+        "name": "Governor's Mansion",
+        "happiness": 2,
+        "uniques": [
+            "Unsellable", "Unbuildable",
+            "[+2] population [in this city]"
+        ]
+    },
+
+    // Ancient Era
+    // Always available
+    {
+        "name": "Orszaggyules",
+        "uniqueTo": "Hungary",
+        "replaces": "Palace",
+        "isNationalWonder": false,
+        "cost": 45,
+        "production": 3,
+        "science": 3,
+        "gold": 3,
+        "culture": 1,
+        "cityStrength": 2,
+        "uniques": [
+            "Only available <in cities with a [多瑙河之珠]>",
+            "Indicates the capital city",
+            "[+25]% Great Person generation [in this city]",
+            "Limited to [2] per Civilization",
+            
+        ]
+    },
+    
+    {
+        "name": "Stele",
+        "replaces": "Monument",
+        "uniqueTo": "Ethiopia",
+        "culture": 2,
+        "faith": 2,
+        "cost": 40,
+        "hurryCostModifier": 40,
+        "maintenance": 1,
+        "uniques": ["Destroyed when the city is captured"]
+    },
+    {
+        "name": "Pillar of Ashoka",
+        "replaces": "Monument",
+        "uniqueTo": "Maurya",
+        "culture": 2,
+        "cost": 20,
+        "hurryCostModifier": 40,
+        "maintenance": 1,
+        "uniques": ["Destroyed when the city is captured"]
+    },
+    // Column 1
+    
+    {
+        "name": "Khambar",
+        "uniqueTo": "Bulgaria",
+        "replaces": "Granary",
+        "cost": 30,
+        "food": 2,
+        "maintenance": 1,
+        "hurryCostModifier": 25,
+        "uniques": [
+		"[+1 Food] from [Fish] tiles [in this city]",
+		"[+1 Production] from [zhangyu] tiles [in this city]",
+            "[+1 Food] from [Deer] tiles [in this city]",
+            "[+1 Food] from [Bananas] tiles [in this city]",
+            "[+1 Food, +1 Gold] from [Wheat] tiles [in this city]",
+        ],
+        "requiredTech": "Pottery"
+    },
+    {
+        "name": "Sauna",
+        "replaces": "Shrine",
+        "uniqueTo": "Finland",
+        "faith": 1,
+        "cost": 40,
+        "maintenance": 1,
+        "requiredTech": "Pottery",
+        "uniques": [
+            "All newly-trained [relevant] units [in this city] receive the [Sauna] promotion",
+            "[+2 Culture] from [Lakes] tiles [in this city]",
+        ]
+    },
+    {
+        "name": "Pyramid",
+        "replaces": "Shrine",
+        "uniqueTo": "The Maya",
+        "faith": 2,
+        "science": 2,
+        "cost": 40,
+        "maintenance": 1,
+        "requiredTech": "Pottery",
+        "uniques": []
+    },
+    // Column 2
+    {
+        "name": "Kyawwat",
+        "replaces": "Stone Works",
+        "uniqueTo": "Burma",
+        "happiness": 1,
+        "production": 1,
+        "maintenance": 1,
+        "hurryCostModifier": 0,
+        "uniques": [
+            "[+1 Production] from [Stone] tiles [in this city]",
+            "[+1 Production] from [Marble] tiles [in this city]",
+            "[+1 Production] from [Salt] tiles [in this city]",
+            "[+1 Production] from [Iron] tiles [in this city]"
+        ],
+        "requiredTech": "Calendar"
+    },
+    {
+        "name": "Stone Mason",
+        "replaces": "Stone Works",
+        "uniqueTo": "Zimbabwe",
+        "production": 1,
+        "maintenance": 1,
+        "hurryCostModifier": 0,
+        "uniques": [
+            "[+1 Production] from [Stone] tiles [in this city]",
+            "[+1 Production] from [Marble] tiles [in this city]",
+            "[+2 Culture] <after discovering [Masonry]>"
+        ],
+        "requiredTech": "Calendar"
+    },
+    {
+        "name": "Akkadian Library",
+        "replaces": "Library",
+        "uniqueTo": "Akkad",
+        "hurryCostModifier": 25,
+        "maintenance": 2,
+        "uniques": [
+            "[+1 Science] per [2] population [in this city]"
+	    "[+1 Science] from all [Science] buildings",
+        ],
+        "requiredTech": "Writing"
+    },
+    {
+        "name": "Royal Library",
+        "replaces": "Library",
+        "uniqueTo": "Assyria",
+	"cost": 75,
+        "hurryCostModifier": 25,
+        "maintenance": 1,
+        "uniques": [
+            "[+1 Science] per [2] population [in this city]",
+            "Only available <if [亚述思路] is constructed> <hidden from users>",
+	    "Comment [只有解锁了文字或者进入古典时代才可以建造该建筑]"
+	    "Gain a free [皇家真理] [in this city] <after discovering [Mathematics]> <hidden from users>",
+	    "Comment [发现数学后获得一个免费的攻城塔]",
+        ],
+    },
+    {
+        "name": "Paper Maker",
+        "replaces": "Library",
+        "uniqueTo": "China",
+        "hurryCostModifier": 25,
+        "gold": 2,
+        "uniques": ["[+1 Science] per [2] population [in this city]"],
+        "requiredTech": "Writing"
+    },
+    {
+        "name": "Plaza de Toros",
+        "replaces": "Circus",
+        "uniqueTo": "Spain",
+        "requiredNearbyImprovedResources": ["Ivory","Truffles","Furs","Horses","Cattle"],
+        "happiness": 2,
+        "culture": 2,
+        "hurryCostModifier": 25,
+        "requiredTech": "Trapping"
+    },
+    {
+        "name": "Lion's Gate",
+        "replaces": "Walls",
+        "uniqueTo": "Hittites",
+        "cost": 75,
+        "gold": 2,
+        "culture": 2,
+        "cityStrength": 5,
+        "cityHealth": 50,
+        "hurryCostModifier": 25,
+        "requiredTech": "Masonry",
+        "uniques": ["Destroyed when the city is captured"]
+    },
+    {
+        "name": "Rova",
+        "replaces": "Walls",
+        "uniqueTo": "Madagascar",
+        "faith": 3,
+        "happiness": 1,
+        "cityStrength": 5,
+        "cityHealth": 50,
+        "hurryCostModifier": 25,
+        "requiredTech": "Masonry",
+        "uniques": ["Destroyed when the city is captured"]
+    },
+    {
+        "name": "Dojo",
+        "replaces": "Barracks",
+        "uniqueTo": "Japan",
+        "hurryCostModifier": 25,
+        "science": 2,
+        "maintenance": 1,
+        "uniques": [
+            "New [Military] units start with [15] Experience [in this city]",
+            "Destroyed when the city is captured",
+            "All newly-trained [Melee] units [in this city] receive the [Dojo] promotion"
+        ],
+        "requiredTech": "Bronze Working"
+    },
+    {
+        "name": "Krepost",
+        "replaces": "Barracks",
+        "uniqueTo": "Russia",
+        "hurryCostModifier": 25,
+        "maintenance": 1,
+        "uniques": [
+            "[-25]% Culture cost of natural border growth [in this city]",
+            "[-25]% Gold cost of acquiring tiles [in this city]",
+            "New [Military] units start with [15] Experience [in this city]",
+            "Destroyed when the city is captured"
+        ],
+        "requiredTech": "Bronze Working"
+    },
+    {
+        "name": "Ikanda",
+        "replaces": "Barracks",
+        "uniqueTo": "Zulu",
+        "hurryCostModifier": 25,
+        "maintenance": 0,
+        "uniques": [
+            "Destroyed when the city is captured",
+            "All newly-trained [Sword] units [in this city] receive the [Buffalo Horns I] promotion",
+            "All newly-trained [Mounted] units [in this city] receive the [Buffalo Horns I] promotion"
+        ],
+        "requiredTech": "Bronze Working"
+    },
+    {
+        "name": "Cothon",
+        "replaces": "Lighthouse",
+        "uniqueTo": "Carthage",
+        "food": 1,
+	"production": 1,
+        "hurryCostModifier": 25,
+        "maintenance": 1,
+        "uniques": [
+			"Must be next to [Coast]",
+			"Comment [未来的海上军营]",
+			"[+15]% Production when constructing [Water] units [in this city]"
+			"New [Water-Military] units start with [10] Experience [in this city]"
+        ],
+        "requiredTech": "Optics"
+    },
+    {
+        "name": "Yam Route",
+        "replaces": "Market",
+        "uniqueTo": "Golden Horde",
+        "cost": 100,
+        "hurryCostModifier": 25,
+        "science": 3,
+        "gold": 2,
+	"specialistSlots": {"Merchant": 1},
+	"percentStatBonus": {"gold": 25}
+        "uniques": [],
+        "requiredTech": "The Wheel"
+    },
+    {
+        "name": "Serai",
+        "uniqueTo": "Timurids",
+        "replaces": "Market",
+        "cost": 100,
+        "hurryCostModifier": 25,
+        "gold": 2,
+	"specialistSlots": {"Merchant": 1},
+	"percentStatBonus": {"gold": 25},
+        "uniques": [
+            "[+1 Gold] per [3] population [in this city]"
+        ],
+        "requiredTech": "Horseback Riding"
+    },
+    {
+        "name": "Ocupada Estable",
+        "replaces": "Stable",
+        "uniqueTo": "Argentina",
+        "maintenance": 1,
+        "requiredNearbyImprovedResources": ["Horses","Sheep","Cattle"],
+        "hurryCostModifier": 25,
+        "uniques": [
+            "[+15]% Production when constructing [Mounted] units [in this city]",
+            "[+1 Production, +1 Food] from [Cattle] tiles [in this city]",
+            "[+1 Production, +1 Food] from [Horses] tiles [in this city]",
+            "[+1 Production, +1 Food] from [Sheep] tiles [in this city]"
+        ],
+        "requiredTech": "Horseback Riding"
+    },
+	{
+		"name": "教廷",
+        "uniqueTo": "Papal State",
+        "replaces": "Courthouse",
+		"faith": 1,
+		"maintenance": 2,
+		"hurryCostModifier": 50,
+		"uniques": ["Remove extra unhappiness from annexed cities",
+			"Can only be built <in [Annexed] cities>"
+		"[+33]% [Science] [in this city]",
+		"[+33]% [Culture] [in this city]",
+		"[+33]% [Production] [in this city]",
+		"[+33]% [Gold] [in this city]",],
+		"requiredTech": "Mathematics"
+	},
+	{
+		"name": "教会",
+        "uniqueTo": "Papal State",
+        "replaces": "Temple",
+		"faith": 2,
+		"requiredBuilding": "Shrine",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"requiredTech": "Philosophy",
+		"uniques": [ "Destroyed when the city is captured",
+			"All newly-trained [Missionary] units [in this city] receive the [圣者] promotion",
+			"All newly-trained [Great Prophet] units [in this city] receive the [圣者] promotion",
+			"All newly-trained [Military] units [in this city] receive the [圣战] promotion"]
+	},
+    {
+        "name": "Ducal Stable",
+        "replaces": "Stable",
+        "uniqueTo": "Poland",
+        "requiredNearbyImprovedResources": ["Horses","Sheep","Cattle"],
+        "hurryCostModifier": 25,
+        "uniques": [
+            "[+15]% Production when constructing [Mounted] units [in this city]",
+            "[+1 Production, +1 Gold] from [Cattle] tiles [in this city]",
+            "[+1 Production, +1 Gold] from [Horses] tiles [in this city]",
+            "[+1 Production, +1 Gold] from [Sheep] tiles [in this city]",
+            "New [Mounted] units start with [15] Experience [in this city]"
+        ],
+        "requiredTech": "Horseback Riding"
+    },
+    {
+        "name": "Outremer",
+        "uniqueTo": "Jerusalem",
+        "replaces": "Courthouse",
+        "culture": 2,
+        "faith": 2,
+        "happiness": 2,
+        "hurryCostModifier": 50,
+        "uniques": [
+            "Remove extra unhappiness from annexed cities",
+            "Can only be built <in [Annexed] cities>"
+        ],
+        "requiredTech": "Mathematics"
+    },
+    {
+        "name": "Mead Hall",
+        "replaces": "Colosseum",
+        "uniqueTo": "Franks",
+        "maintenance": 1,
+        "happiness": 3,
+        "culture": 1,
+        "hurryCostModifier": 25,
+        "requiredTech": "Construction"
+    },
+    {
+        "name": "Street Carnival",
+        "replaces": "Colosseum",
+        "uniqueTo": "Brazil",
+	"cost": 40,
+        "maintenance": 1,
+        "happiness": 1,
+        "hurryCostModifier": 25,
+        "uniques": ["Unsellable","Empire enters a [4]-turn Golden Age <before the [Renaissance era]>"]
+    },
+    {
+        "name": "Slave Market",
+        "replaces": "Colosseum",
+        "uniqueTo": "Kongo",
+        "production": 2,
+        "gold": 3,
+        "hurryCostModifier": 25,
+        "requiredTech": "Construction",
+        "uniques": [
+            "[+3 Production, +2 Gold] <after discovering [Industrialization]>",
+            "[-1] population [in this city]"
+        ]
+    },
+    {
+        "name": "Ayyubid Burial Tomb",
+        "uniqueTo": "Ayyubids",
+        "uniques": [
+            "Doubles Gold given to enemy if city is captured",
+            "Cannot be purchased",
+            "Unbuildable", "Unsellable"
+        ],
+        "faith": 2,
+        "happiness": 2,
+        "requiredBuilding": "Shrine",
+        "hurryCostModifier": 25,
+        "requiredTech": "Philosophy"
+    },
+    {
+        "name": "Yeshiva",
+        "replaces": "Temple",
+        "uniqueTo": "Israel",
+        "cost": 120,
+        "food": 1,
+        "production": 1,
+        "faith": 2,
+        "requiredBuilding": "Shrine",
+        "maintenance": 2,
+        "hurryCostModifier": 25,
+        "requiredTech": "Philosophy"
+    },
+    {
+        "name": "Stave Church",
+        "replaces": "Temple",
+        "uniqueTo": "Norway",
+        "cost": 75,
+        "faith": 2,
+        "requiredBuilding": "Shrine",
+        "hurryCostModifier": 25,
+        "requiredTech": "Philosophy",
+        "uniques": [
+            "[+1 Production] from [Tundra] tiles [in this city]",
+            "[+1 Production] from [Snow] tiles [in this city]"
+        ]
+    },
+    {
+        "name": "Mud Pyramid Mosque",
+        "replaces": "Temple",
+        "uniqueTo": "Songhai",
+        "hurryCostModifier": 25,
+        "culture": 2,
+        "faith": 2,
+        "requiredBuilding": "Shrine",
+        "requiredTech": "Philosophy"
+    },
+    {
+        "name": "Ziggurat",
+        "replaces": "Temple",
+        "uniqueTo": "Sumeria",
+        "faith": 2,
+        "requiredBuilding": "Shrine",
+        "maintenance": 1,
+        "hurryCostModifier": 25,
+        "percentStatBonus": {"science": 10},
+        "requiredTech": "Philosophy"
+    },
+    {
+        "name": "Hippodrome",
+        "replaces": "Amphitheater",
+        "uniqueTo": "Byzantium",
+        "cost": 100,
+        "culture": 3,
+        "faith": 1,
+        "happiness": 1,
+        "requiredBuilding": "Monument",
+        "maintenance": 2,
+        "hurryCostModifier": 25,
+        "uniques": [
+            "Destroyed when the city is captured",
+        ],
+        "requiredTech": "Drama and Poetry"
+    },
+    {
+        "name": "Odeon",
+        "replaces": "Amphitheater",
+        "uniqueTo": "Greece",
+        "culture": 4,
+
+        "gold": 1,
+        //"specialistSlots": {"Writer": 1},
+        "requiredBuilding": "Monument",
+        "hurryCostModifier": 25,
+        "uniques": [
+            "Destroyed when the city is captured",
+        ],
+        "requiredTech": "Drama and Poetry"
+    },
+    {
+        "name": "龛邸",
+        "replaces": "Garden",
+        "uniqueTo": "Indonesia",
+        "cost": 120,
+        "faith": 6,
+        "uniques": ["[+20]% Great Person generation [in this city]"],
+        "hurryCostModifier": 25,
+        "maintenance": 1,
+        "requiredTech": "Drama and Poetry"
+    },
+    {
+        "name": "Baray",
+        "replaces": "Garden",
+        "uniqueTo": "Khmer",
+        "uniques": [
+            "[+1 Culture] per [3] population [in this city]"
+            "[+25]% Great Person generation [in this city]"
+        ],
+        "hurryCostModifier": 25,
+        "maintenance": 1,
+        "requiredTech": "Drama and Poetry"
+    },
+    {
+        "name": "Painted Monastery",
+        "replaces": "Shrine",
+        "uniqueTo": "Romania",
+        "cost": 40,
+        "maintenance": 1,
+        "requiredTech": "Pottery",
+        "uniques": [
+		"Unsellable",
+		"Gain [60] [Faith] <(modified by game speed)>",],
+
+    },
+    {
+        "name": "King Ezana's Stele",
+        "replaces": "National Epic",
+        "uniqueTo": "Aksum",
+        "cost": 125,
+        "culture": 3,
+        "faith": 4,
+        "isNationalWonder": true,
+        "uniques": [
+            "Only available <if [Shrine] is constructed in all [non-[Puppeted]] cities>",
+            "[+25]% Great Person generation [in this city]",
+            "[+2 Food, +1 Gold, +1 Production, +1 Faith] from every [Shrine]",
+            "Cost increases by [30] per owned city",
+        ],
+        "requiredTech": "Drama and Poetry"
+    },
+    {
+        "name": "Bazaar",
+        "replaces": "Market",
+        "uniqueTo": "Arabia",
+        "gold": 2,
+        "specialistSlots": {"Merchant": 1},
+        "hurryCostModifier": 25,
+        "percentStatBonus": {"gold": 25},
+        "uniques": [
+            "Provides 1 extra copy of each improved luxury resource near this City",
+            "[+2 Gold] from [Oil] tiles [in this city]",
+            "[+2 Gold] from [Oasis] tiles [in this city]"
+        ],
+        "requiredTech": "Currency"
+    },
+    {
+        "name": "Knyaz Court",
+        "replaces": "Market",
+        "uniqueTo": "Ukraine",
+        "gold": 2,
+        "specialistSlots": {"Merchant": 1},
+        "hurryCostModifier": 25,
+        "percentStatBonus": {"gold": 25},
+        "uniques": [
+            "Gain [20] [Gold] <(modified by game speed)> <upon gaining a [Great Person] unit>", // should be on expending... give me some time to work on it
+        ],
+        "requiredTech": "Currency"
+    },
+    {
+        "name": "Mint",
+        "gold": 2,
+        "requiredNearbyImprovedResources": ["Gold Ore","Silver","Copper"],
+        "hurryCostModifier": 25,
+        "uniques": [
+            "[+2 Gold] from [Gold Ore] tiles [in this city]",
+            "[+2 Gold] from [Silver] tiles [in this city]",
+            "[+2 Gold] from [Copper] tiles [in this city]"
+        ],
+        "requiredTech": "Currency"
+    },
+    {
+        "name": "Silversmith",
+        "uniqueTo": "Celts",
+        "replaces": "Mint",
+        "production": 2,
+        "gold": 1,
+        "hurryCostModifier": 25,
+        "uniques": [
+            "[+2 Gold] from [Gold Ore] tiles [in this city]",
+            "[+2 Gold] from [Silver] tiles [in this city]",
+            "[+2 Gold] from [Copper] tiles [in this city]"
+        ],
+        "requiredTech": "Currency"
+    },
+    {
+        "name": "Grand Cathedral of Vilnius",
+        "replaces": "Grand Temple",
+        "uniqueTo": "Lithuania",
+        "cost": 95,
+        "culture": 1,
+        "faith": 8,
+        "uniques": [
+            "Only available <if [Temple] is constructed in all [non-[Puppeted]] cities>",
+            "Cost increases by [30] per owned city",
+        ],
+        "requiredTech": "Theology",
+        "isNationalWonder": true
+    },
+/*    {
+        "name": "Saint Peter's Basilica",
+        "replaces": "Grand Temple",
+        "uniqueTo": "Papal State",
+        "cost": 125,
+        "culture": 1,
+        "faith": 8,
+        "uniques": [
+            "Only available <if [Temple] is constructed in all [non-[Puppeted]] cities>",
+            "Cost increases by [30] per owned city",
+            "[+100]% Natural religion spread [in this city]",
+            "Can only be built <in [Holy] cities>",
+            "Gain a free [Cathedral] [in this city]",
+            "Free [Great Prophet] appears"
+        ],
+        "requiredTech": "Theology",
+        "isNationalWonder": true
+    },*/
+    {
+        "name": "Grand Canal of Venice",
+        "uniqueTo": "Venice",
+        "replaces": "National Treasury",
+        "cost": 125,
+        "gold": 4,
+        "percentStatBonus": {"gold": 25},
+        "isNationalWonder": true,
+        "uniques": [
+            "Cost increases by [30] per owned city",
+        ],
+        "requiredTech": "Currency"
+    },
+    {
+        "name": "Longhouse",
+        "replaces": "Workshop",
+        "uniqueTo": "Iroquois",
+        "cost": 75,
+        "maintenance": 2,
+        "production": 2,
+        "specialistSlots": {"Engineer": 1},
+        "hurryCostModifier": 25,
+        "percentStatBonus": {"production": 10},
+        "uniques": [
+            "[+1 Production] from [Forest] tiles [in this city]",
+            "[+1 Production] from [Jungle] tiles [in this city]"
+        ],
+        "requiredTech": "Metal Casting"
+    },
+    {
+        "name": "Coral Port",
+        "uniqueTo": "Kilwa",
+        "replaces": "Workshop",
+        "maintenance": 2,
+        "production": 2,
+        "specialistSlots": {"Engineer": 1},
+        "hurryCostModifier": 25,
+        "percentStatBonus": {"production": 10},
+        "uniques": [
+            "[+1 Culture] from [Fish] tiles [in this city]",
+            "[+1 Culture] from [Crab] tiles [in this city]",
+            "[+1 Culture] from [Pearls] tiles [in this city]",
+            "[+2 Gold] from [Whales] tiles [in this city]"
+        ],
+        "requiredTech": "Metal Casting"
+    },
+    {
+        "name": "Blast Furnace",
+        "replaces": "Forge",
+        "uniqueTo": "Nubia",
+        "culture": 2,
+        "hurryCostModifier": 25,
+        "requiredTech": "Metal Casting",
+        "uniques": [
+            "[+15]% Production when constructing [Land] units [in this city]",
+            "[+1 Production, +2 Culture] from [Iron] tiles [in this city]",
+            "All newly-trained [Ranged] units [in this city] receive the [Accuracy I] promotion",
+            "All newly-trained [Scout] units [in this city] receive the [Accuracy I] promotion",
+            "All newly-trained [Siege] units [in this city] receive the [Accuracy I] promotion"
+        ]
+    },
+    {
+        "name": "Minaa",
+        "uniqueTo": "Oman",
+        "replaces": "Harbor",
+        "cost": 120,
+        "cityStrength": 3,
+        "production": 2,
+        "maintenance": 2,
+        "hurryCostModifier": 25,
+        "uniques": [
+            "Connects trade routes over water",
+            "[+1 Production] from [Water resource] tiles [in this city]",
+            "Must be next to [Coast]",
+        ],
+        "requiredTech": "Compass"
+    },
+    {
+        "name": "Trade Harbor",
+        "replaces": "Harbor",
+        "uniqueTo": "Phoenicia",
+        "cost": 120,
+        "maintenance": 2,
+        "hurryCostModifier": 25,
+        "uniques": [
+            "Connects trade routes over water",
+            "Must be next to [Coast]",
+            "[+1 Production] from [Water resource] tiles [in this city]",
+            "[+15]% Production when constructing [Water] units [in this city]"
+        ],
+        "requiredTech": "Compass"
+    },
+    {
+        "name": "Feitoria",
+        "uniqueTo": "Portugal",
+        "replaces": "Harbor",
+        "cost": 120,
+        "hurryCostModifier": 25,
+        "uniques": [
+            "Connects trade routes over water",
+            "Must be next to [Coast]",
+            "[+1 Gold] from [Water resource] tiles [in this city]",
+            "[+1 Production] from [Water resource] tiles [in this city]",
+            "New [Water] units start with [15] Experience [in this city]"
+        ],
+        "requiredTech": "Compass"
+    },
+    {
+        "name": "Madrasah",
+        "replaces": "University",
+        "uniqueTo": "Ayyubids",
+        "maintenance": 2,
+        "faith": 2,
+        "hurryCostModifier": 15,
+        "percentStatBonus": {"science": 33},
+        "specialistSlots": {"Scientist": 2},
+        "requiredBuilding": "Library",
+        "uniques": [
+            "[+2 Science] from [Jungle] tiles [in this city]",
+            "[+2 Science] from [Oasis] tiles [in this city]",
+            "[+1 Science] from [Flood plains] tiles [in this city]"
+        ],
+        "requiredTech": "Education"
+    },
+    {
+        "name": "Wat",
+        "replaces": "University",
+        "uniqueTo": "Siam",
+        "maintenance": 2,
+        "hurryCostModifier": 15,
+        "percentStatBonus": {"science": 33},
+        "specialistSlots": {"Scientist": 2},
+        "culture": 3,
+        "requiredBuilding": "Library",
+        "uniques": ["[+2 Science] from [Jungle] tiles [in this city]"],
+        "requiredTech": "Education"
+    },
+    {
+        "name": "Mughal Fort",
+        "cost": 150,
+        "replaces": "Castle",
+        "uniqueTo": "India",
+        "cityStrength": 7,
+        "cityHealth": 25,
+        "culture": 4,
+        "happiness": 2,
+        "hurryCostModifier": 25,
+        "uniques": [
+            "[+2 Culture] [in this city] <after discovering [Flight]>",
+            "Destroyed when the city is captured"
+        ],
+        "requiredTech": "Chivalry"
+    },
+    {
+        "name": "Alcazaba",
+        "uniqueTo": "The Moors",
+        "replaces": "Castle",
+        "cityStrength": 7,
+        "cityHealth": 25,
+        "science": 3,
+        "hurryCostModifier": 25,
+        "requiredBuilding": "Walls",
+        "requiredTech": "Chivalry",
+        "uniques": [
+            "[+10]% growth [in this city]",
+            "Destroyed when the city is captured"
+        ]
+    },
+    {
+        "name": "Falu Gruva",
+        "replaces": "Ironworks",
+        "uniqueTo": "Sweden",
+        "cost": 125,
+        "production": 8,
+        "culture": 1,
+        "isNationalWonder": true,
+        "uniques": [
+            "Only available <if [Workshop] is constructed in all [non-[Puppeted]] cities>",
+            "Cost increases by [30] per owned city",
+            "[+1 Production] from [Hill] tiles [in this city]",
+            "[+6 Culture] <after discovering [Flight]>"
+        ],
+        "requiredTech": "Metal Casting"
+    },
+    {
+        "name": "Reislaufer Post",
+        "replaces": "Armory",
+        "uniqueTo": "Switzerland",
+        "hurryCostModifier": 25,
+        "maintenance": 1,
+        "requiredBuilding": "Barracks",
+        "uniques": [
+            "Free [Reislaufer] appears",
+            "New [Military] units start with [15] Experience [in this city]",
+            "All newly-trained [{Land} {Military}] units [in this city] receive the [Mountaineer] promotion",
+            "Destroyed when the city is captured"
+        ],
+        "requiredTech": "Steel"
+    },
+    {
+        "name": "Darbas",
+        "replaces": "Observatory",
+        "uniqueTo": "Armenia",
+        "maintenance": 1,
+        "culture": 2,
+        "hurryCostModifier": 15,
+        "requiredBuilding": "Library",
+        "uniques": [
+    	    "[+33]% [Science]",
+	    "[+2 Science, +1 Culture] from [Mountain] ties [in this city]",
+        ],
+        "requiredTech": "Astronomy"
+    },
+    {
+        "name": "Staatsmuseum",
+        "replaces": "Opera House",
+        "uniqueTo": "Boers",
+        "cost": 175,
+        "culture": 4,
+        "specialistSlots": {"Artist": 1},
+        "hurryCostModifier": 10,
+        "requiredBuilding": "Amphitheater",
+        "maintenance": 2,
+        "requiredTech": "Acoustics",
+        "uniques": [
+            "Destroyed when the city is captured",
+        ]
+    },
+    {
+        "name": "Ceilidh Hall",
+        "replaces": "Opera House",
+        "uniqueTo": "Scotland",
+        "culture": 3,
+        "happiness": 3,
+        "hurryCostModifier": 10,
+        "requiredBuilding": "Amphitheater",
+        "maintenance": 2,
+        "requiredTech": "Acoustics",
+        "uniques": [
+            "Destroyed when the city is captured",
+        ]
+    },
+    {
+        "name": "Canton Factory",
+        "replaces": "Bank",
+        "uniqueTo": "Manchuria",
+        "gold": 2,
+        "specialistSlots": {"Merchant": 2},
+        "hurryCostModifier": 15,
+        "percentStatBonus": {"gold": 35},
+        "requiredBuilding": "Market",
+        "requiredTech": "Banking"
+    },
+    {
+        "name": "Satrap's Court",
+        "replaces": "Bank",
+        "uniqueTo": "Persia",
+        "gold": 3,
+        "specialistSlots": {"Merchant": 1},
+        "happiness": 2,
+        "hurryCostModifier": 15,
+        "percentStatBonus": {"gold": 25},
+        "requiredBuilding": "Market",
+        "requiredTech": "Banking"
+    },
+    {
+        "name": "Convict Penitentiary",
+        "replaces": "Constabulary",
+        "uniqueTo": "Australia",
+        "cost": 120,
+        "gold": 1,
+        "production": 1,
+        "hurryCostModifier": 25,
+        "percentStatBonus": {"gold": 5,"production": 5},
+        "uniques": [
+            "Hidden when espionage is disabled",
+            "[-25]% enemy spy effectiveness [in this city]"
+        ]
+    },
+    {
+        "name": "Stade",
+        "replaces": "Theatre",
+        "uniqueTo": "Belgium",
+        "cost": 150,
+        "happiness": 3,
+        "gold": 1,
+        "culture": 1,
+        "hurryCostModifier": 10,
+        "requiredTech": "Printing Press"
+    },
+    {
+        "name": "Irish Pub",
+        "replaces": "Theatre",
+        "uniqueTo": "Ireland",
+        "cost": 180,
+        "happiness": 2,
+        "food": 3,
+        "hurryCostModifier": 10,
+        "requiredBuilding": "Colosseum",
+        "uniques": [],
+        "requiredTech": "Printing Press"
+    },
+    {
+        "name": "Mysore Palace",
+        "uniqueTo": "Mysore",
+        "replaces": "Hermitage",
+        "cost": 125,
+        "percentStatBonus": {"culture": 50},
+        "culture": 5,
+        "production": 3,
+        "science": 3,
+        "gold": 3,
+        "isNationalWonder": true,
+        "uniques": [
+            "Only available <if [Walls] is constructed in all [non-[Puppeted]] cities>",
+            "Cost increases by [30] per owned city",
+            "Empire enters golden age"
+        ],
+        "requiredTech": "Chivalry"
+    },
+    {
+        "name": "Coffee House",
+        "replaces": "Windmill",
+        "uniqueTo": "Austria",
+        "cost": 150,
+        "production": 2,
+        "percentStatBonus": {"production": 5},
+        "specialistSlots": {"Engineer": 1},
+        "hurryCostModifier": 25,
+        "maintenance": 2,
+        "uniques": [
+            "[+20]% Great Person generation [in this city]",
+            "[+1 Production] from [Oasis] tiles [in this city]",
+            "[+1 Production] from [Lakes] tiles [in this city]"
+        ],
+        "requiredTech": "Printing Press"
+    },
+    {
+        "name": "Hacienda",
+        "replaces": "Windmill",
+        "uniqueTo": "Mexico",
+        "production": 2,
+        "specialistSlots": {"Engineer": 1},
+        "hurryCostModifier": 25,
+        "maintenance": 2,
+        "uniques": [
+            "[+10]% Production when constructing [All] buildings [in this city]",
+            "[+1 Production] from [Oasis] tiles [in this city]",
+            "[+1 Production] from [Lakes] tiles [in this city]",
+            "[+1 Gold] from [Bonus resource] tiles [in this city]",
+            "[+1 Food] from [Strategic resource] tiles [in this city]",
+            "[+1 Production] from [Luxury resource] tiles [in this city]"
+        ],
+        "requiredTech": "Economics"
+    },
+    {
+        "name": "Basilica",
+        "replaces": "Museum",
+        "uniqueTo": "Italy",
+        "culture": 4,
+        "specialistSlots": {"Artist": 2},
+        "greatPersonPoints": {"Great Artist": 2},
+        "maintenance": 3,
+        "hurryCostModifier": 0,
+        "requiredTech": "Industrialization",
+        "uniques": [
+            "Destroyed when the city is captured",
+            "[+20]% Great Person generation [in this city]",
+        ]
+    },
+    {
+        "name": "Spomenik",
+        "replaces": "Museum",
+        "uniqueTo": "Yugoslavia",
+        "culture": 2,
+        "percentStatBonus": {"science": 20},
+        "requiredBuilding": "Amphitheater",
+        "maintenance": 5,
+        "hurryCostModifier": 0,
+        "requiredTech": "Archaeology",
+        "uniques": [
+            "Destroyed when the city is captured",
+        ]
+    },
+    {
+        "name": "Halkevleri",
+        "replaces": "Public School",
+        "uniqueTo": "Turkey",
+        "cost": 300,
+        "science": 3,
+        "culture": 3,
+        "specialistSlots": {"Scientist": 1},
+        "requiredBuilding": "University",
+        "maintenance": 3,
+        "hurryCostModifier": 0,
+        "uniques": [
+            "[+1 Science] per [2] population [in this city]",
+            "[+1 Science] from [Forest] tiles [in this city]"
+        ],
+        "requiredTech": "Scientific Theory"
+    },
+    {
+        "name": "Fabrik",
+        "uniqueTo": "Prussia",
+        "replaces": "Factory",
+        "cost": 240,
+        "production": 4,
+        "percentStatBonus": {"production": 10},
+        "specialistSlots": {"Engineer": 2},
+        "requiredBuilding": "Workshop",
+        "maintenance": 3,
+        "hurryCostModifier": 0,
+        "uniques": [
+        ],
+        "requiredTech": "Industrialization"
+    },
+    {
+        "name": "BMPC Plant",
+        "uniqueTo": "Brunei",
+        "gold": 3,
+        "production": 5,
+        "cost": 200,
+        "hurryCostModifier": 25,
+        "uniques": [
+            "[+3 Production, +3 Gold] from [Oil] tiles [in this city]",
+            "Provides [2] [Oil]"
+        ],
+        "requiredTech": "Biology"
+    },
+    {
+        "name": "Tim Hortons",
+        "uniqueTo": "Canada",
+        "replaces": "Stock Exchange",
+        "cost": 300,
+        "happiness": 2,
+        "percentStatBonus": {"gold": 25},
+        "specialistSlots": {"Merchant": 2},
+        "hurryCostModifier": 15,
+        "requiredBuilding": "Bank",
+        "uniques": ["[+1 Gold] from [River] tiles [in this city]"],
+        "requiredTech": "Electricity"
+    },
+    {
+        "name": "Ski Resort",
+        "replaces": "Stadium",
+        "uniqueTo": "Switzerland",
+        "happiness": 3,
+        "culture": 3,
+        "cost": 250,
+        "uniques": [
+            "[+2 Gold] from [Mountain] tiles [in this city]"
+        ],
+        "requiredTech": "Electricity"
+    },
+    {
+	"name": "ltwdjz",
+	"uniqueTo": "LIthuania",
+	"cost": 0,
+	"uniques": [
+	    "Unbuildable",
+	    "Gain enough Faith for [9]% of a Great Prophet"
+		"Remove [ltwdjz] [in this city] <hidden from users>",
+	]
+    },
+    {
+        "name": "婆婆门行宫",
+        "specialistSlots": {"婆婆门": 1},
+        "cost": 0,
+        "hurryCostModifier": 25,
+        "uniques": [
+	    "Unbuildable"
+            "Destroyed when the city is captured",
+        ],
+    },
+    {
+        "name": "帝帝利行宫",
+        "specialistSlots": {"帝帝利": 1},
+        "cost": 0,
+        "hurryCostModifier": 25,
+        "uniques": [
+	    "Unbuildable"
+            "Destroyed when the city is captured",
+        ],
+    },
+    {
+        "name": "高卢1",
+        "cost": 0,
+        "hurryCostModifier": 25,
+        "uniques": [
+	    "Unbuildable"
+	    "All newly-trained [Military] units [in all cities] receive the [高卢远古] promotion <upon entering the [Ancient era]>",
+	    "All newly-trained [Scout] units [in all cities] receive the [斥候1] promotion <upon entering the [Ancient era]>",
+            "Destroyed when the city is captured",
+        ],
+    },
+    {
+        "name": "高卢2",
+        "cost": 0,
+        "hurryCostModifier": 25,
+        "uniques": [
+	    "Unbuildable"
+	    "All newly-trained [Military] units [in all cities] receive the [高卢古典] promotion <upon entering the [Classical era]> ",
+	    "All newly-trained [Scout] units [in all cities] receive the [斥候2] promotion <upon entering the [Classical era]>",
+            "Destroyed when the city is captured",
+        ],
+    },
+    {
+        "name": "高卢3",
+        "cost": 0,
+        "hurryCostModifier": 25,
+        "uniques": [
+	    "Unbuildable"
+	    "All newly-trained [Military] units [in all cities] receive the [高卢中古] promotion <upon entering the [Medieval era]> ",
+	    "All newly-trained [Scout] units [in all cities] receive the [斥候3] promotion <upon entering the [Medieval era]>",
+            "Destroyed when the city is captured",
+        ],
+    },
+    {
+        "name": "高卢4",
+        "cost": 0,
+        "hurryCostModifier": 25,
+        "uniques": [
+	    "Unbuildable"
+	    "All newly-trained [Military] units [in all cities] receive the [高卢启蒙] promotion <upon entering the [Renaissance era]> ",
+	    "All newly-trained [Scout] units [in all cities] receive the [斥候4] promotion <upon entering the [Renaissance era]>",
+            "Destroyed when the city is captured",
+        ],
+    },
+    {
+        "name": "高卢5",
+        "cost": 0,
+        "hurryCostModifier": 25,
+        "uniques": [
+	    "Unbuildable"
+	    "All newly-trained [Military] units [in all cities] receive the [高卢工业] promotion <upon entering the [Industrial era]> ",
+	    "All newly-trained [Scout] units [in all cities] receive the [斥候5] promotion <upon entering the [Industrial era]>",
+            "Destroyed when the city is captured",
+        ],
+    },
+    {
+        "name": "高卢6",
+        "cost": 0,
+        "hurryCostModifier": 25,
+        "uniques": [
+	    "Unbuildable"
+	    "All newly-trained [Military] units [in all cities] receive the [高卢原子] promotion <upon entering the [Atomic era]>",
+	    "All newly-trained [Scout] units [in all cities] receive the [斥候6] promotion <upon entering the [Atomic era]>",
+            "Destroyed when the city is captured",
+        ],
+    },
+    {
+        "name": "高卢7",
+        "cost": 0,
+        "hurryCostModifier": 25,
+        "uniques": [
+	    "Unbuildable"
+	    "All newly-trained [Military] units [in all cities] receive the [高卢信息] promotion <upon entering the [Information era]> ",
+            "Destroyed when the city is captured",
+        ],
+    },
+    {
+        "name": "立陶宛教",
+        "cost": 0,
+        "hurryCostModifier": 25,
+        "uniques": [
+	    "Unbuildable"
+            "May enhance a religion",
+            "May found a religion",
+            "Destroyed when the city is captured",
+        ],
+    },
+    {
+        "name": "富有且慷慨的苏美尔之神",
+        "cost": 0,
+	"uniqueTo": "Sumeria",
+        "hurryCostModifier": 25,
+        "uniques": [
+	    "Unbuildable <when below [1000] [苏美尔功勋]>",
+	    "Instantly consumes [1000] [苏美尔功勋]",
+	    "Creates a [Ancient ruins] improvement on a specific tile",
+	    "Remove [富有且慷慨的苏美尔之神] [in this city] <hidden from users>"
+	    
+        ],
+    },
+    {
+        "name": "守护石碑",
+        "cost": 0,
+        "hurryCostModifier": 25,
+        "uniques": [
+	    "Unbuildable <when below [1] [守护指示物]>",
+	    "Instantly consumes [1] [守护指示物]",
+	    "Remove [守护石碑] [in this city] <hidden from users>",
+	    "comment [建造石碑发动祭祀，可以召唤守护神雕像为我军保卫家园！]",
+	    "Free [守护神雕像] appears <hidden from users>"
+        ],
+    },
+    {
+        "name": "守护石像",
+        "cost": 0,
+	"gold":1,
+	"science":1,
+        "hurryCostModifier": 25,
+        "uniques": [
+	    "Unbuildable",
+	    "comment [来自保加利亚的石像护佑国家安康，可以召唤守护神雕像为我军保卫家园！]",
+	    "Free [守护神雕像] appears <hidden from users>"
+        ],
+    },
+    {
+        "name": "大盆地诡计",
+        "cost": 0,
+	"uniqueTo": "Shoshone",
+        "hurryCostModifier": 25,
+        "uniques": [
+	    "Unsellable",
+	    "Creates a [肖松尼的扩张] improvement on a specific tile",
+        ],
+    },
+    {
+        "name": "婆罗门行宫",
+        "specialistSlots": {"婆罗门": 1},
+        "cost": 0,
+        "hurryCostModifier": 25,
+        "uniques": [
+	    "Unbuildable",
+            "Destroyed when the city is captured",
+        ],
+    },
+    {
+        "name": "刹帝利行宫",
+        "specialistSlots": {"刹帝利": 1},
+        "cost": 0,
+        "hurryCostModifier": 25,
+        "uniques": [
+	    "Unbuildable",
+            "Destroyed when the city is captured",
+        ],
+    },
+    {
+        "name": "多瑙河之珠",
+        "uniqueTo": "Hungary",
+        "cost": 0,
+        "uniques": [
+	    "Unsellable",
+	    "[-2 Culture] <after adopting [Dawah]>",
+	    "[-2 Production] <after adopting [Salat]>",
+	    "[-4 Gold] <after adopting [Zakat]>",
+	    "[-3 Happiness] <after adopting [Kotel]>",
+	    "[-1 Food, -1 Production, -2 Culture] <after adopting [Hajj]>",
+            "Limited to [1] per Civilization",
+            "Destroyed when the city is captured",
+        ]
+    },
+    {
+        "name": "自然景区建造计划",
+        "cost": 0,
+        "uniqueTo": "Finland",
+        "hurryCostModifier": 25,
+        "uniques": [
+	    "Unsellable",
+	    "Creates a [自然景区] improvement on a specific tile",
+        ],
+    },
+	{	
+        "name": "Civilized Leader-Bumin",
+		"isNationalWonder": true,
+		"cost":1,
+		"uniqueTo": "Turk",
+		"replacementTextForUniques": "[[Great General] is earned [50]% faster]",
+		"uniques": ["Can only be built<in [in capital] cities>", "Only available <in cities without a [Civilized Leader-Ashina Dujishi]>", "[Great General] is earned [33]% faster"]	
+	},
+	{	
+        "name": "Civilized Leader-Ashina Dujishi",
+		"isNationalWonder": true,
+		"science": 1,
+		"cost":1,
+		"uniqueTo": "Turk",
+		"replacementTextForUniques": "[[+1 Production] from every [Camp]]",	
+		"uniques": ["Can only be built<in [in capital] cities>", "Only available <in cities without a [Civilized Leader-Bumin]>", "[+1 Production] from every [Camp]",]
+	
+	},
+	{	
+        "name": "Civilized Leader-Croesus",
+		"isNationalWonder": true,
+		"cost":1,
+		"uniqueTo": "Lydia",
+		"replacementTextForUniques": "[[Gold] cost of purchasing [All] units [-10]%]\n[[-33]% Culture cost of natural border growth [in all cities]]",
+		"uniques": ["Can only be built<in [in capital] cities>",
+		"[Gold] cost of purchasing [All] units [-10]%",
+        "[-33]% Culture cost of natural border growth [in all cities]",
+		]
+	},
+	{
+		"name": "Lydia Mint",
+		"replaces": "Mint",
+        "uniqueTo": "Lydia",
+		"maintenance": 0,
+		"specialistSlots": {"Merchant": 1},
+	    "uniques": ["[+2 Gold] from [Luxury resource] tiles [in this city]", "[+2 Gold] from [Gold Ore] tiles [in this city]", "[+2 Gold] from [Silver] tiles [in this city]", "[+2 Gold] from [Copper] tiles [in this city]"],
+		"requiredTech": "Currency"		
+	},
+    {
+        "name": "灵光一闪",
+        "cost": 9999,
+	"science": 1,
+        "uniqueTo": "Korea",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Unbuildable <when below [1] [进步]>",
+		"Instantly consumes [1] [进步]",
+		"Remove [灵光一闪] [in this city] <hidden from users>",
+		"Automatically built in all cities where it is buildable",
+	],
+    },
+    {
+        "name": "好战",
+        "cost": 9999,
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Unbuildable",
+		"Instantly provides [1] [阿卡德]",
+		"Remove [好战] [in this city] <hidden from users>",
+		"Automatically built in all cities where it is buildable",
+	],
+    },
+		{
+		"name": "Granary",
+		"food": 2,
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": ["[+1 Food] from [Deer] tiles [in this city]",
+		"[+1 Food] from [Fish] tiles [in this city]",
+		"[+1 Production] from [zhangyu] tiles [in this city]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"
+			"[+1 Food] from [Bananas] tiles [in this city]",
+			"[+1 Food] from [Wheat] tiles [in this city]"],
+		"requiredTech": "Pottery"
+	},
+		{
+		"name": "Lighthouse",
+		"cost": 75,
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": ["Must be next to [Coast]",
+			"Comment [未来的海上军营]",
+			"[+15]% Production when constructing [Water] units [in this city]"
+			"New [Water-Military] units start with [10] Experience [in this city]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"
+			],
+		"requiredTech": "Optics"
+	},
+
+	{
+		"name": "Seaport",
+		"hurryCostModifier": 25,
+		"maintenance": 3,
+		"requiredBuilding": "Harbor",
+		"uniques": ["[+1 Production, -1 Food] from [zhgangyu] tiles [in this city]","[+1 Production, -1 Food] from [Fish] tiles [in this city]","[+1 Food, +1 Gold] from [Coast] tiles [in this city]","[+1 Food, +1 Gold] from [Ocean] tiles [in this city]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"
+			"Must be next to [Coast]", "[+15]% Production when constructing [Water] units [in this city]"],
+		"requiredTech": "Navigation"
+	},
+    {
+        "name": "产能制裁",
+        "cost": 60,
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Unbuildable <when below [1] [制裁]>",
+		"Provides [1] [援助]",
+		"Limited to [1] per Civilization",
+	],
+    },
+    {
+        "name": "粮食制裁",
+        "cost": 60,
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Unbuildable <when below [1] [制裁]>",
+		"Provides [1] [援助]",
+		"Limited to [1] per Civilization",
+	],
+    },
+    {
+        "name": "金钱制裁",
+        "cost": 60,
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Unbuildable <when below [1] [制裁]>",
+		"Provides [1] [援助]",
+		"Limited to [1] per Civilization",
+	],
+    },
+    {
+        "name": "文化制裁",
+        "cost": 60,
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Unbuildable <when below [1] [制裁]>",
+		"Provides [1] [援助]",
+		"Limited to [1] per Civilization",
+	],
+    },
+    {
+        "name": "科研制裁",
+        "cost": 60,
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Unbuildable <when below [1] [制裁]>",
+		"Provides [1] [援助]",
+		"Limited to [1] per Civilization",
+	],
+    },
+    {
+        "name": "信仰制裁",
+        "cost": 60,
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Unbuildable <when below [1] [制裁]>",
+		"Provides [1] [援助]",
+		"Limited to [1] per Civilization",
+	],
+    },
+    {
+        "name": "快乐制裁",
+        "cost": 60,
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Unbuildable <when below [1] [制裁]>",
+		"Provides [1] [援助]",
+		"Limited to [1] per Civilization",
+	],
+    },
+    {
+        "name": "军事制裁",
+        "cost": 60,
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Unbuildable <when below [1] [制裁]> <hidden from users>",
+		"Provides [1] [援助]",
+		"Limited to [1] per Civilization",
+	],
+    },
+    {
+        "name": "神人",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Unbuildable",
+		"Provides [1] [城市]",
+	],
+    },
+    {
+        "name": "皇家真理",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Unbuildable",
+		"Free [Siege Tower] appears"
+	],
+    },
+    {
+        "name": "亚述思路",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Unbuildable",
+		"Provides [1] [亚述]",
+	],
+    },
+    {
+        "name": "印度神油",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Unbuildable <when below [1] [印度人口]>",
+                "Only available <in cities without a [印度神]>",
+		"Instantly consumes [1] [印度人口]",
+		"[+1] population [in this city]",
+		"Remove [印度神油] [in this city] <hidden from users>",
+	],
+    },
+    {
+        "name": "印度神",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口的起点]",
+	    "Unsellable","Unbuildable","Instantly provides [1] [印度秘术]"
+		],
+    },
+    {
+        "name": "印度神2",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [2] population"
+		"Instantly provides [1] [印度人口]",
+		],
+        "requiredBuilding": "印度神",
+    },
+    {
+        "name": "印度神3",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神2]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [3] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神2",
+    },
+    {
+        "name": "印度神4",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神3]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [4] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神3",
+    },
+    {
+        "name": "印度神5",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神4]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [5] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神4",
+    },
+    {
+        "name": "印度神6",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神5]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [6] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神5",
+    },
+    {
+        "name": "印度神7",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神6]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [7] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神6",
+    },
+    {
+        "name": "印度神8",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神7]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [8] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神7",
+    },
+    {
+        "name": "印度神9",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神8]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [9] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神8",
+    },
+    {
+        "name": "印度神10",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神9]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [10] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神9",
+    },
+    {
+        "name": "印度神11",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神10]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [11] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神10",
+    },
+    {
+        "name": "印度神12",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神11]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [12] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神11",
+    },
+    {
+        "name": "印度神13",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神12]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [13] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神12",
+    },
+    {
+        "name": "印度神14",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神13]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [14] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神13",
+    },
+    {
+        "name": "印度神15",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神14]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [15] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神14",
+    },
+    {
+        "name": "印度神16",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神15]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [16] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神15",
+    },
+    {
+        "name": "印度神17",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神16]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [17] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神16",
+    },
+    {
+        "name": "印度神18",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神17]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [18] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神17",
+    },
+    {
+        "name": "印度神19",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神18]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [19] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神18",
+    },
+    {
+        "name": "印度神20",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神19]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [20] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神19",
+    },
+    {
+        "name": "印度神21",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神20]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [21] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神20",
+    },
+    {
+        "name": "印度神22",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神21]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [22] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神21",
+    },
+    {
+        "name": "印度神23",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神22]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [23] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神22",
+    },
+    {
+        "name": "印度神24",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神23]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [24] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神23",
+    },
+    {
+        "name": "印度神25",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神24]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [25] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神24",
+    },
+    {
+        "name": "印度神26",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神25]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [26] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神25",
+    },
+    {
+        "name": "印度神27",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神26]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [27] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神26",
+    },
+    {
+        "name": "印度神28",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神27]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [28] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神27",
+    },
+    {
+        "name": "印度神29",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神28]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [29] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神28",
+    },
+    {
+        "name": "印度神30",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神29]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [30] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神29",
+    },
+    {
+        "name": "印度神31",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神30]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [31] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神30",
+    },
+    {
+        "name": "印度神32",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神31]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [32] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神31",
+    },
+    {
+        "name": "印度神33",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神32]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [33] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神32",
+    },
+    {
+        "name": "印度神34",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神33]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [34] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神33",
+    },
+    {
+        "name": "印度神35",
+        "hurryCostModifier": 25,
+        "uniques": [
+		"Comment [这个建筑代表了印度涨人口判定方法的一部分]",
+                "Only available <in cities with a [印度神34]>",
+	    "Unsellable",
+	    "Unbuildable <when below [1] [印度秘术]>",
+		"Requires at least [35] population"
+		"Instantly provides [1] [印度人口]",
+		"Automatically built in all cities where it is buildable",
+		],
+        "requiredBuilding": "印度神34",
+    },
+	{
+		"name": "Monument",
+		"culture": 2,
+		"cost": 40,
+		"hurryCostModifier": 40,
+		"maintenance": 1,
+		"uniques": ["Destroyed when the city is captured","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"]
+	},
+	{
+		"name": "Shrine",
+		"faith": 1,
+		"cost": 40,
+		"maintenance": 1,
+		"requiredTech": "Pottery",
+		"uniques": ["Hidden when religion is disabled","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"]
+	},
+	{
+		"name": "Stone Works",
+		"happiness": 1,
+		"production": 1,
+		"requiredNearbyImprovedResources": ["Marble", "Stone"],
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"uniques": ["Must not be on [Plains]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"
+			"[+1 Production] from [Stone] tiles [in this city]",
+			"[+1 Production] from [Marble] tiles [in this city]"],
+		"requiredTech": "Calendar"
+	},
+	{
+		"name": "Library",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": ["[+1 Science] per [2] population [in this city]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Writing"
+	},
+	{
+		"name": "Circus",
+		"requiredNearbyImprovedResources": ["Ivory","Horses"],
+		"happiness": 2,
+		"hurryCostModifier": 25,
+		"uniques:": ["[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"]
+		"requiredTech": "Trapping"
+	},
+	{
+		"name": "Water Mill",
+		"maintenance": 2,
+		"food": 2,
+		"production": 1,
+		"hurryCostModifier": 25,
+		"uniques": ["Must be on [River]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "The Wheel"
+	},
+	{
+		"name": "Walls",
+		"cityStrength": 5,
+		"cityHealth": 50,
+		"hurryCostModifier": 25,
+		"requiredTech": "Masonry",
+		"uniques": ["Destroyed when the city is captured","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"]
+	},
+
+	{
+		"name": "Barracks",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": ["New [Military] units start with [15] Experience [in this city]", "Destroyed when the city is captured","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Bronze Working"
+	},
+	{
+		"name": "Stable",
+		"maintenance": 1,
+		"requiredNearbyImprovedResources": ["Horses","Sheep","Cattle"],
+		"hurryCostModifier": 25,
+		"uniques": ["[+15]% Production when constructing [Mounted] units [in this city]",
+			"[+1 Production] from [Cattle] tiles [in this city]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"
+			"[+1 Production] from [Horses] tiles [in this city]",
+			"[+1 Production] from [Sheep] tiles [in this city]"],
+		"requiredTech": "Horseback Riding"
+	},
+	{
+		"name": "Courthouse",
+		"maintenance": 4,
+		"hurryCostModifier": 50,
+		"uniques": ["Remove extra unhappiness from annexed cities","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"
+			"Can only be built <in [Annexed] cities>"],
+		"requiredTech": "Mathematics"
+	},
+
+	{
+		"name": "Colosseum",
+		"maintenance": 1,
+		"happiness": 2,
+		"hurryCostModifier": 25,
+		"uniques": ["[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Construction"
+	},
+
+	{
+		"name": "Temple",
+		"faith": 2,
+		"requiredBuilding": "Shrine",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"requiredTech": "Philosophy",
+		"uniques": ["Hidden when religion is disabled", "Destroyed when the city is captured","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"]
+	},
+
+	{
+		"name": "Amphitheater",
+		"culture": 3,
+		"specialistSlots": {"Artist": 1},
+		"requiredBuilding": "Monument",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"uniques": ["Destroyed when the city is captured","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Drama and Poetry"
+	},
+
+	{
+		"name": "Market",
+		"gold": 2,
+		"specialistSlots": {"Merchant": 1},
+		"hurryCostModifier": 25,
+		"percentStatBonus": {"gold": 25},
+		"uniques": ["[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Currency"
+	},
+
+	{
+		"name": "Mint",
+		"maintenance": 0,
+		"requiredNearbyImprovedResources": ["Gold Ore", "Silver"],
+		"hurryCostModifier": 25,
+		"uniques": ["[+2 Gold] from [Gold Ore] tiles [in this city]", "[+2 Gold] from [Silver] tiles [in this city]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Currency"
+	},
+
+	{
+		"name": "Aqueduct",
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"uniques": ["[40]% Food is carried over after population increases [in this city]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Engineering"
+	},
+
+	{
+		"name": "Garden",
+		"uniques": ["[+25]% Great Person generation [in this city]", "Must be next to [Fresh water]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"requiredTech": "Theology"
+	},
+
+	{
+		"name": "Workshop",
+		"maintenance": 2,
+		"production": 2,
+		"specialistSlots": {"Engineer": 1},
+		"hurryCostModifier": 25,
+		"percentStatBonus": {"production": 10},
+		"uniques": ["[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Metal Casting"
+	},
+
+	{
+		"name": "Forge",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"requiredNearbyImprovedResources": ["Iron"],
+		"requiredTech": "Metal Casting",
+		"uniques": ["[+15]% Production when constructing [Spaceship part] units [in this city]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"
+			"[+15]% Production when constructing [Land] units [in this city]",
+			"[+1 Production] from [Iron] tiles [in this city]"]
+	},
+	{
+		"name": "University",
+		"maintenance": 2,
+		"hurryCostModifier": 15,
+		"percentStatBonus": {"science": 33},
+		"specialistSlots": {"Scientist": 2},
+		"requiredBuilding": "Library",
+		"uniques": ["[+2 Science] from [Jungle] tiles [in this city]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Education"
+	},
+
+	{
+		"name": "Castle",
+		"cityStrength": 7,
+		"cityHealth": 25,
+		"hurryCostModifier": 25,
+		"requiredBuilding": "Walls",
+		"requiredTech": "Chivalry",
+		"uniques": ["Destroyed when the city is captured","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"]
+	},
+
+	{
+		"name": "Armory",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"requiredBuilding": "Barracks",
+		"uniques": ["New [Military] units start with [15] Experience [in this city]", "Destroyed when the city is captured","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Steel"
+	},
+	{
+		"name": "Observatory",
+		"maintenance": 0,
+		"hurryCostModifier": 15,
+		"percentStatBonus": {"science": 50},
+		"requiredBuilding": "Library",
+		"uniques": ["Must be next to [Mountain]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Astronomy"
+	},
+	{
+		"name": "Opera House",
+		"culture": 4,
+		"specialistSlots": {"Artist": 1},
+		"hurryCostModifier": 10,
+		"requiredBuilding": "Amphitheater",
+		"maintenance": 2,
+		"requiredTech": "Acoustics",
+		"uniques": ["Destroyed when the city is captured","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"]
+	},
+	{
+		"name": "Bank",
+		"gold": 2,
+		"specialistSlots": {"Merchant": 1},
+		"hurryCostModifier": 15,
+		"percentStatBonus": {"gold": 25},
+		"uniques": ["[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredBuilding": "Market",
+		"requiredTech": "Banking"
+	},
+    {
+        "name": "Constabulary",
+        "cost": 160,
+        "maintenance": 1,
+        "hurryCostModifier": 10,
+        "uniques": ["Hidden when espionage is disabled", "[-25]% enemy spy effectiveness [in this city]", "[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+        "requiredTech": "Banking"
+    },
+
+	{
+		"name": "Theatre",
+		"happiness": 3,
+		"hurryCostModifier": 10,
+		"maintenance": 2,
+		"requiredBuilding": "Colosseum",
+		"uniques": ["[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Printing Press"
+	},
+	{
+		"name": "Windmill",
+		"production": 2,
+		"specialistSlots": {"Engineer": 1},
+		"hurryCostModifier": 25,
+		"maintenance": 2,
+		"uniques": ["Must not be on [Hill]", "[+10]% Production when constructing [All] buildings [in this city]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Economics"
+	},
+	{
+		"name": "Arsenal",
+		"cost": 300,
+		"cityStrength": 9,
+		"cityHealth": 25,
+		"hurryCostModifier": 25,
+		"requiredBuilding": "Castle",
+		"requiredTech": "Metallurgy",
+		"uniques": ["Destroyed when the city is captured","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"]
+	},
+	{
+		"name": "Museum",
+		"culture": 5,
+		"specialistSlots": {"Artist": 2},
+		"requiredBuilding": "Opera House",
+		"maintenance": 3,
+		"hurryCostModifier": 0,
+		"requiredTech": "Archaeology",
+		"uniques": ["Destroyed when the city is captured","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"]
+	},
+	{
+		"name": "Public School",
+		"science": 3,
+		"specialistSlots": {"Scientist": 1},
+		"requiredBuilding": "University",
+		"maintenance": 3,
+		"hurryCostModifier": 0,
+		"uniques": ["[+1 Science] per [2] population [in this city]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Scientific Theory"
+	},
+	{
+		"name": "Factory",
+		"cost": 360,
+		"production": 4,
+		"percentStatBonus": {"production": 10},
+		"specialistSlots": {"Engineer": 2},
+		"requiredBuilding": "Workshop",
+		"maintenance": 3,
+		"uniques": ["[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"hurryCostModifier": 0,
+		"requiredResource": "Coal",
+		"requiredTech": "Industrialization"
+	},
+
+	{
+		"name": "Military Academy",
+		"hurryCostModifier": 0,
+		"maintenance": 1,
+		"requiredBuilding": "Armory",
+		"uniques": ["New [Military] units start with [15] Experience [in this city]", "Destroyed when the city is captured","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Military Science"
+	},
+
+	{
+		"name": "Hospital",
+		"food": 5,
+		"requiredBuilding": "Aqueduct",
+		"maintenance": 2,
+		"hurryCostModifier": 0,
+		"uniques": ["[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Biology"
+	},
+	{
+		"name": "Stock Exchange",
+		"gold": 3,
+		"percentStatBonus": {"gold": 25},
+		"specialistSlots": {"Merchant": 2},
+		"hurryCostModifier": 15,
+		"requiredBuilding": "Bank",
+		"uniques": ["[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Electricity"
+	},
+	{
+		"name": "Hydro Plant",
+		"requiredResource": "Aluminum",
+		"hurryCostModifier": 0,
+		"maintenance": 3,
+		"uniques": ["Must be on [River]","[+1 Production] from [River] tiles [in this city]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Electricity"
+	},
+    {
+        "name": "Police Station",
+        "cost": 300,
+        "maintenance": 1,
+        "hurryCostModifier": 10,
+        "uniques": ["Hidden when espionage is disabled", "[-25]% enemy spy effectiveness [in this city]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+        "requiredBuilding": "Constabulary",
+        "requiredTech": "Electricity"
+    },
+
+	{
+		"name": "Stadium",
+		"happiness": 4,
+		"requiredBuilding": "Theatre",
+		"maintenance": 2,
+		"uniques": ["[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Refrigeration"
+	},
+	{
+		"name": "Broadcast Tower",
+		"culture": 3,
+		"percentStatBonus": {"culture": 33},
+		"requiredBuilding": "Museum",
+		"maintenance": 3,
+		"requiredTech": "Radio",
+		"uniques": ["Destroyed when the city is captured","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"]
+	},
+
+	{
+		"name": "Military Base",
+		"cityStrength": 12,
+		"cityHealth": 25,
+		"hurryCostModifier": 25,
+		"requiredBuilding": "Arsenal",
+		"requiredTech": "Replaceable Parts",
+		"uniques": ["Destroyed when the city is captured","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"]
+	},
+
+	{
+		"name": "Research Lab",
+		"science": 4,
+		"percentStatBonus": {"science": 50},
+		"specialistSlots": {"Scientist": 1},
+		"requiredBuilding": "Public School",
+		"uniques": ["[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"maintenance": 3,
+		"requiredTech": "Plastics"
+	},
+
+	{
+		"name": "Medical Lab",
+		"requiredBuilding": "Hospital",
+		"maintenance": 3,
+		"requiredTech": "Pharmaceuticals",
+		"uniques": ["[25]% Food is carried over after population increases [in this city]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"]
+	},
+
+	{
+		"name": "Solar Plant",
+		"production": 5,
+		"percentStatBonus": {"production": 15},
+		"requiredBuilding": "Factory",
+		"maintenance": 3,
+		"requiredTech": "Ecology",
+		"uniques": ["Must be next to [Desert]", "Only available <in cities without a [Nuclear Plant]>","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"]
+	},
+	{
+		"name": "Recycling Center",
+		"maintenance": 3,
+		"requiredTech": "Ecology",
+		"uniques": ["Provides [2] [Aluminum]","Limited to [5] per Civilization","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"]
+	},
+	{
+		"name": "Nuclear Plant",
+		"production": 5,
+		"percentStatBonus": {"production": 15},
+		"requiredBuilding": "Factory",
+		"maintenance": 3,
+		"requiredResource": "Uranium",
+		"requiredTech": "Nuclear Fission",
+		"uniques": ["Only available <in cities without a [Solar Plant]>","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"]
+	},
+
+	{
+		"name": "Bomb Shelter",
+		"cost": 300,
+		"maintenance": 1,
+		"requiredTech": "Telecommunications",
+		"uniques": ["Population loss from nuclear attacks [-75]% [in this city]","Damage to garrison from nuclear attacks [-75]% [in this city]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"]
+	},
+	{
+		"name": "Spaceship Factory",
+		"production": 3,
+		"requiredResource": "Aluminum",
+		"cost": 360,
+		"requiredBuilding": "Factory",
+		"uniques": ["[+50]% Production when constructing [Spaceship part] units [in this city]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"],
+		"requiredTech": "Robotics"
+	},
+		{
+		"name": "Harbor",
+		"cost": 120,
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"uniques": ["[+1 Production] from [Water resource] tiles [in this city]","[-20]% production cost <for [Normandy] Civilizations> <hidden from users>"
+			"Connects trade routes over water","Must be next to [Coast]"],
+		"requiredTech": "Compass"
+	},
+	{
+		"name": "Mausoleum of Halicarnassus",
+		"culture": 1,
+		"greatPersonPoints": {"Great Merchant": 1},
+		"isWonder": true,
+		"uniques": ["Provides a sum of gold each time you spend a Great Person",
+			"[+2 Gold] from [Marble] tiles [in all cities]", "[+2 Gold] from [Stone] tiles [in all cities]"],
+		"requiredTech": "Masonry",
+		"quote": "'The whole earth is the tomb of heroic men and their story is not given only on stone over their clay but abides everywhere without visible symbol woven into the stuff of other men's lives.' - Pericles"
+	},
+	{
+		"name": "Terracotta Army",
+		"culture": 2,
+		"isWonder": true,
+		"uniques": ["Free [Horseman] appears","Free [Composite Bowman] appears","Free [Composite Bowman] appears","Free [Swordsman] appears","Provides [1] [Iron]","Provides [1] [Horses]"],
+		"requiredTech": "Construction",
+		"quote": "'Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your own beloved sons, and they will stand by you even unto death.' - Sun Tzu"
+	},
+]

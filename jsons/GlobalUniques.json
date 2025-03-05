@@ -1,0 +1,53 @@
+{
+    "name": "Global uniques",
+    "uniques": [
+		"[-15]% [Production] <if [产能制裁] is constructed by anybody> <for [All] Civilizations>",
+		"[+15]% [Production] <if [产能制裁] is constructed by anybody> <for [America] Civilizations>",
+		"[-15]% [Food] <if [粮食制裁] is constructed by anybody> <for [All] Civilizations>",
+		"[+15]% [Food] <if [粮食制裁] is constructed by anybody> <for [America] Civilizations>",
+		"[-15]% [Gold] <if [金钱制裁] is constructed by anybody> <for [All] Civilizations>",
+		"[+15]% [Gold] <if [金钱制裁] is constructed by anybody> <for [America] Civilizations>",
+		"[-15]% [Happiness] <if [快乐制裁] is constructed by anybody> <for [All] Civilizations>",
+		"[+15]% [Happiness] <if [快乐制裁] is constructed by anybody> <for [America] Civilizations>",
+		"[-15]% [Culture] <if [文化制裁] is constructed by anybody> <for [All] Civilizations>",
+		"[+15]% [Culture] <if [文化制裁] is constructed by anybody> <for [America] Civilizations>",
+		"[-15]% [Science] <if [科技制裁] is constructed by anybody> <for [All] Civilizations>",
+		"[+15]% [Science] <if [科技制裁] is constructed by anybody> <for [America] Civilizations>",
+		"[-10]% Strength <for [All] units> <if [军事制裁] is constructed by anybody> <for [All] Civilizations>",
+		"[+10]% Strength <for [All] units> <if [军事制裁] is constructed by anybody> <for [America] Civilizations>",
+		"[-15]% [Faith] <if [信仰制裁] is constructed by anybody> <for [All] Civilizations>",
+		"[+15]% [Faith] <if [信仰制裁] is constructed by anybody> <for [America] Civilizations>",
+
+		"[+30]% [Production] <when above [0] [援助]> <if [产能制裁] is constructed by anybody> <for [All] Civilizations>",
+		"[-20]% [Production] <when above [0] [援助]> <if [产能制裁] is constructed by anybody> <for [America] Civilizations>",
+		"[+30]% [Food] <when above [0] [援助]> <if [粮食制裁] is constructed by anybody> <for [All] Civilizations>",
+		"[-20]% [Food] <when above [0] [援助]> <if [粮食制裁] is constructed by anybody> <for [America] Civilizations>",
+		"[+30]% [Gold] <when above [0] [援助]> <if [金钱制裁] is constructed by anybody> <for [All] Civilizations>",
+		"[-20]% [Gold] <when above [0] [援助]> <if [金钱制裁] is constructed by anybody> <for [America] Civilizations>",
+		"[+30]% [Happiness] <when above [0] [援助]> <if [快乐制裁] is constructed by anybody> <for [All] Civilizations>",
+		"[-20]% [Happiness] <when above [0] [援助]> <if [快乐制裁] is constructed by anybody> <for [America] Civilizations>",
+		"[+30]% [Culture] <when above [0] [援助]> <if [文化制裁] is constructed by anybody> <for [All] Civilizations>",
+		"[-20]% [Culture] <when above [0] [援助]> <if [文化制裁] is constructed by anybody> <for [America] Civilizations>",
+		"[+30]% [Science] <when above [0] [援助]> <if [科技制裁] is constructed by anybody> <for [All] Civilizations>",
+		"[-20]% [Science] <when above [0] [援助]> <if [科技制裁] is constructed by anybody> <for [America] Civilizations>",
+		"[+20]% Strength <for [All] units> <when above [0] [援助]> <if [军事制裁] is constructed by anybody> <for [All] Civilizations>",
+		"[-15]% Strength <for [All] units> <when above [0] [援助]> <if [军事制裁] is constructed by anybody> <for [America] Civilizations>",
+		"[+30]% [Faith] <when above [0] [援助]> <if [信仰制裁] is constructed by anybody> <for [All] Civilizations>",
+		"[-20]% [Faith] <when above [0] [援助]> <if [信仰制裁] is constructed by anybody> <for [America] Civilizations>",
+
+		"[+10 Production] [in capital] <for [City-States] Civilizations>"
+		"[+10 Food] [in capital] <for [City-States] Civilizations>"
+		"[+10 Science] [in capital] <for [City-States] Civilizations>"
+		"[+10 Culture] [in capital] <for [City-States] Civilizations>"
+		"[+10 Happiness] [in capital] <for [City-States] Civilizations>"
+		"[+100]% Strength for cities <for [City-States] Civilizations>",
+
+		"[+2 Gold] <for every [1] [Gold Ore]> <for [All] Civilizations>",
+		"[+2 Gold] <for every [1] [Gem]> <for [All] Civilizations>",
+		"[+2 Gold] <for every [1] [Silver]> <for [All] Civilizations>",
+		"[+2 Gold] <for every [1] [Copper]> <for [All] Civilizations>",
+		"[-2 Gold] <for [All] Civilizations>"
+
+		],
+}
+// "[-15]% [Production] <if [产能制裁] is constructed by anybody> <for [All] Civilizations>"
